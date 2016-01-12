@@ -1,0 +1,15 @@
+<apex:page standardController="Schedule__c" recordSetVar="schedule" extensions="Mycontrollers" sidebar="false">
+<apex:form >
+ DETAILS
+ <apex:pageBlock title="Schedule Details">
+     <apex:pageBlockTable value="{!Schedule}" var="sh">
+         <apex:column value="{!sh.Patient__c}"/>
+         <apex:column headervalue="Alloted Time Slot">
+         <apex:inputField value="{!sh.Alloted_Time_Slot__c}"/>
+         <apex:commandButton value="Confirm" onclick="return confirm('are you sure to confirm');"/>
+         <apex:commandButton value="Cancel" action="{!Cancel}"/>
+         </apex:column>
+      </apex:pageBlockTable>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>

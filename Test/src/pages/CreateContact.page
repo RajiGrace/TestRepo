@@ -1,0 +1,15 @@
+<apex:page standardController="Contact">
+  <apex:form >
+   <apex:pageBlock title="Contact Edit" > 
+      <apex:pageBlockButtons location="top">
+          <apex:commandButton value="Save" action="{!save}"/> 
+      <apex:pageBlockSection title="Contact Information" collapsible="false" columns="2">
+          Contact Owner:{! Contact.Owner.Name } <br/>
+         <apex:inputfield value="{!Contact.FirstName}"/>
+         <apex:inputfield value="{!Contact.LastName}"/>
+         <apex:inputfield value="{!Contact.Email}"/>
+       </apex:pageBlockSection>
+       </apex:pageBlockButtons> 
+    </apex:pageBlock>
+  </apex:form>  
+</apex:page>

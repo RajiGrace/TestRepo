@@ -1,0 +1,13 @@
+<apex:page standardController="Account">
+    <apex:form >
+      <apex:pageBlock title="Account Edit">
+          <apex:pageBlockButtons location="top">
+              <apex:commandButton value="Save" action="{!save}"/>
+              <apex:commandButton value="Save&New"/>
+              <apex:commandButton value="Cancel" action="{!cancel}"/>
+          </apex:pageBlockButtons>
+          <apex:pageBlockSection title="Account Information" collapsible="false">
+          </apex:pageBlockSection>
+      </apex:pageBlock>
+     </apex:form>
+</apex:page>

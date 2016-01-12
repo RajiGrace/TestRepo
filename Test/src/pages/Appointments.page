@@ -1,0 +1,16 @@
+<apex:page standardController="Doctor__c" recordSetVar="doctor" sidebar="false" showHeader="false">
+<apex:form >
+  <h5>
+    APPOINTMENTS
+  </h5>
+  <apex:pageBlock title="Doctor Details">
+  
+  <apex:pageBlockTable value="{!doctor}" var="d">
+  <apex:column headerValue="Doctor Name">
+  <apex:outputLink value="{!d.Name}" onclick="return " rendered="true">{!d.Name}</apex:outputLink>
+  
+  </apex:column>
+  </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:form>
+</apex:page>
